@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layui实现注册页面</title>
+    <link rel="stylesheet" href="css/registerLayUI.css">
+    <link rel="stylesheet" href="css/layui/layui.css" media="all">
+    <script src="js/layui/layui.all.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <!--头部左侧-->
+            <div class="header_left">
+                <div class="img">
+                    <img src="images/logo.jpg" alt="logo">
+                </div>
+                <div class="header_left_l">高校科研信息管理系统</div>
+            </div>
+            <div class="header_right">
+                <div class="lr">
+                    <div class="login"><a href="login.html">登录</a></div>
+                    <div class="register"><a href="#">注册</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main_header">
+                <div class = "header_text">
+                    <p>注册高校科研信息管理系统</p>
+                    <p class = "text_p">&nbsp;&nbsp;&nbsp;&nbsp;随着高等学校科研建设的不断深入发展，
+                        校园网络建设的全面推进和科研力度的进一步加大。
+                        开发科研管理系统，
+                        使其能更方便、更有效和更安全地管理各种科研资料和数据，
+                        以便提高科研管理的工作效率和工作质量。</p>
+                </div>
+            </div>
+            <form class="layui-form" action="">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">学校</label>
+                    <div class="layui-input-inline">
+                        <select name="city" lay-verify="required">
+                            <option value=""></option>
+                            <option value="0">河北工业大学</option>
+                            <option value="1">天津大学</option>
+                            <option value="2">南开大学</option>
+                        </select>
+                    </div>
+                    <div class="layui-form-mid layui-word-aux">请选择您当前就读学校</div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">手机号码</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="title" placeholder="" autocomplete="off" class="layui-input">
+                    </div>
+                    <div class="layui-form-mid layui-word-aux"><span style="color: green">手机号码输入正确</span></div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">验证码</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="code" placeholder="" autocomplete="off" class="layui-input">
+                    </div>
+                    <div class="layui-form-mid layui-word-aux"><button class="layui-btn layui-btn-sm">获取</button></div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">密码框</label>
+                    <div class="layui-input-inline">
+                        <input type="password" name="password1" required lay-verify="required" placeholder="" autocomplete="off" class="layui-input">
+                    </div>
+                    <div class="layui-form-mid layui-word-aux"><span style="color: green">密码输入正确</span></div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">密码确认</label>
+                    <div class="layui-input-inline">
+                        <input type="password" name="password2" required lay-verify="required" placeholder="" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">性别</label>
+                    <div class="layui-input-block">
+                        <input type="radio" name="sex" value="男" title="男">
+                        <input type="radio" name="sex" value="女" title="女" checked>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">姓名</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="title" required  lay-verify="required" placeholder="" autocomplete="off" class="layui-input">
+                    </div>
+                    <div class="layui-form-mid layui-word-aux">请输入您的真实姓名</div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">安全邮箱</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="password1" required lay-verify="required" placeholder="" autocomplete="off" class="layui-input">
+                    </div>
+                    <div class="layui-form-mid layui-word-aux"><span style="color: red">邮箱格式错误</span></div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <button class="layui-btn" lay-submit lay-filter="form">注册</button>
+                        <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                    </div>
+                </div>
+            </form>
+            <script src="js/layui/layui.all.js"></script>
+            <script>
+                //Demo
+                layui.use('form', function(){
+                    var form = layui.form;
+
+                    //监听提交
+                    form.on('submit(formDemo)', function(data){
+                        layer.msg(JSON.stringify(data.field));
+                        return false;
+                    });
+                });
+            </script>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-image: url("../images/background.jpg");
+}
+.container{
+    height: 1000px;
+    position: fixed;
+}
+.header{
+    width: 100%;
+    height:10%;
+    background-color: burlywood;
+}
+.header_left{
+    width:55%;
+    height:100%;
+    background-color: white;
+    float: left;
+}
+.img img{
+    width:14%;
+    float: left;
+    padding-left:80px;
+}
+.header_left_l{
+    width:45%;
+    height: 100%;
+    background-color:white;
+    font-size: 4vh;
+    font-family: 幼圆, serif;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: black;
+    /*padding-left:120px;*/
+    /*border-right:10px solid lightblue;*/
+    float: left;
+}
+.header_left_r{
+    margin: 0 auto;
+    padding-top: 25px;
+    font-size: 5vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    float: left;
+    /*font-family: "Adobe 楷体 Std R", serif;*/
+    /*font-family: 华文行楷, serif;*/
+    /*font-family: "Adobe 宋体 Std L", serif;*/
+    /*font-family: 隶书;*/
+    font-family: "微软雅黑 Light", serif;
+    color: rgb(102,102,102);
+}
+.header_right{
+    width:45%;
+    height: 100%;
+    background-color: white;
+    float: left;
+}
+.lr{
+    float: right;
+    margin-right: 200px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 6%;
+}
+.lr .login{
+    padding-right: 20px;
+    border-right: 5px solid skyblue;
+}
+.lr .register{
+    padding-left: 20px;
+}
+.main{
+    width:50%;
+    height:620px;
+    margin: 0px auto;
+    background-color: white;
+    font-family: 宋体, serif;
+}
+.main_header{
+    width:100%;
+    height: 18%;
+    background-color: rgb(47,175,188);
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+}
+.header_text{
+    width:80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.text_p{
+    font-size: 15px;
+    margin-top: 10px;
+    line-height: 20px;
+}
+.main form{
+    margin-top: 20px;
+}
+.main input{
+    border-radius: 5px;
+}

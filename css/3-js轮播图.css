@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.carousel{
+    width:400px;
+    height:300px;
+    position: relative;
+}
+.carousel_img{
+}
+.carousel-img{
+    position: absolute;
+    top:0;
+    left: 0;
+    opacity: 0;
+    transition: all 1.5s;
+}
+.carousel-img:nth-child(1){
+    opacity: 1;
+}
+.carousel-img img{
+    width: 400px;
+    height: 300px;
+}
+.carousel-left{
+    width:30px;
+    height: 20px;
+    background-color: #c6c8ca;
+    position: absolute;
+    top:130px;
+    text-align: center;
+    line-height: 20px;
+    vertical-align: center;
+    font-size: 15px;
+    opacity: 0.5;
+}
+.carousel-right{
+    width:30px;
+    height: 20px;
+    background-color: #c6c8ca;
+    position: absolute;
+    top:130px;
+    left:370px;
+    text-align: center;
+    line-height: 20px;
+    vertical-align: center;
+    font-size: 15px;
+    opacity: 0.5;
+}
+.carousel-left:hover{
+    background-color: #121416;
+    color: white;
+}
+.carousel-right:hover{
+    background-color: #121416;
+    color: white;
+}
+.points ul{
+    position: absolute;
+    top:270px;
+    left: 320px;
+    list-style: none;
+}
+.points ul li{
+    float: left;
+    margin-right: 10px;
+    color: white;
+    opacity: 0.5;
+}
+.points ul li:hover{
+    opacity: 1;
+}
